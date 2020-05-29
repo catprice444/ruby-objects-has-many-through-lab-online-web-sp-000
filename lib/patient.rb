@@ -17,10 +17,12 @@ class Patient
 
   end
 
-  def appointments #iterates through the Appointments array and returns Appointments that belong to the patient
+  def appointments #iterates through the Appointments array and selects Appointments that belong to the patient
+    Appointments.all.select {|appointment| appointment.patient == self}
   end
 
-  def doctors #iterates over that patient's Appointments and collects the doctor that belongs to each Appointment 
+  def doctors #iterates over that patient's Appointments and maps the doctor that belongs to each Appointment
+    appointments.map {|appointment| appointment.patient}
   end
 
 end
