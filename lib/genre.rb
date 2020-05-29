@@ -13,11 +13,11 @@ class Genre
   end
 
   def songs #iterates through all songs and finds the song that belong to that genre
-    
+
   end
 
   def artists #iterates over the genre's collection of songs and collects the artist that owns each song
-    
+
   end
 
 end
