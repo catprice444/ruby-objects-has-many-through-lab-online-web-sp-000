@@ -17,6 +17,11 @@ class Doctor
 
   end
 
-  def appointments
-  end 
+  def appointments #iterates through all Appointments and finds those belonging to this doctor
+
+  end
+
+  def patients #iterates over that doctor's Appointments and collects the patient that belongs to each Appointment
+
+  end
 end
