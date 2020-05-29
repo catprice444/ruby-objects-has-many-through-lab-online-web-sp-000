@@ -23,6 +23,7 @@ class Patient
     Appointment.all.select {|appointment| appointment.patient == self}
   end
 
+  binding.pry
   def doctors #iterates over that patient's Appointments and collects the doctor that belongs to each Appointment
     appointments.collect {|appointment| appointment.doctor}
   end
