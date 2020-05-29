@@ -17,8 +17,8 @@ class Doctor
 
   end
 
-  def appointments #iterates through all Appointments and finds those belonging to this doctor
-
+  def appointments #iterates through all Appointments and selects those belonging to this doctor
+    Appointment.all.select {|appointment| doctor.appointment}
   end
 
   def patients #iterates over that doctor's Appointments and collects the patient that belongs to each Appointment
