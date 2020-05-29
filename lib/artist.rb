@@ -11,7 +11,7 @@ class Artist
     @@all
   end
 
-  def new_song(name, genre) #takes in an arguement of name and genre and creates a new song
+  def new_song(name, genre) #takes in an argument of name and genre and creates a new song
                             #That song should know it belongs to the artist
     new_song == Song.new
   end
