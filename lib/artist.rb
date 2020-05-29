@@ -11,15 +11,16 @@ class Artist
     @@all
   end
 
-  def new_song(name, genre)
+  def new_song(name, genre) #takes in an arguement of name and genre and creates a new song
+                            #That song should know it belongs to the artist
     new_song == Song.new
   end
 
-  def songs
+  def songs #iterates through all songs and finds the songs that belong to that artist
     @@all.select {|song| self.song}
   end
 
-  def genres
+  def genres #iterates over that artist's songs and collects the genre of each song
     self.songs.collect {|genre| song.genre}
   end
 end
