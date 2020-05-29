@@ -12,7 +12,7 @@ class Patient
     @@all
   end
 
-  def new_appointment(doctor, date) #takes in a date and an instance of the Doctor class and creates a new Appointment.
+  def new_appointment(date, doctor) #takes in a date and an instance of the Doctor class and creates a new Appointment.
                       #the Appointment should know that is belongs to the patient
     Appointment.new(self, date, doctor)
   end
