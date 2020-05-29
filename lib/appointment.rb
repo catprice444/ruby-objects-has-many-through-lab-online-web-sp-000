@@ -6,10 +6,10 @@ class Appointment
     @date = date.to_date
     @patient = patient
     @doctor = doctor
-    @@all << self 
+    @@all << self
   end 
 
-  def self.all 
-    @@all 
-  end 
-end 
+  def self.all
+    @@all
+  end
+end
