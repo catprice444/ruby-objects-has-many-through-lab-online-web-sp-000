@@ -13,8 +13,8 @@ class Genre
   end
 
   def songs #iterates through all songs and finds the song that belong to that genre
-    Song.all.find do |song|
-      song == Song.new
+    Song.all.find do |genre|
+      genre == Song.new
     end
   end
 
