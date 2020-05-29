@@ -1,2 +1,9 @@
 class Doctor
-end 
+
+  @@all = []
+
+
+  def self.all
+    @@all
+  end 
+end
