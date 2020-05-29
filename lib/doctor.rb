@@ -22,6 +22,6 @@ class Doctor
   end
 
   def patients #iterates over that doctor's Appointments and maps the patient that belongs to each Appointment
-    appointments.map {|patient| appointment.patient}
+    appointments.map {|appointment| appointment.patient}
   end
 end
