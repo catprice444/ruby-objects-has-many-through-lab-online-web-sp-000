@@ -21,7 +21,7 @@ class Patient
     Appointment.all.select {|appointment| appointment.patient == self}
   end
 
-  def doctors #iterates over that patient's Appointments and maps the doctor that belongs to each Appointment
+  def doctors #iterates over that patient's Appointments and collects the doctor that belongs to each Appointment
     appointments.map {|appointment| appointment.doctor}
   end
 
