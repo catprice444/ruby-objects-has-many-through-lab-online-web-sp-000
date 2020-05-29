@@ -17,7 +17,7 @@ class Artist
   end
 
   def songs #iterates through all songs and finds the songs that belong to that artist
-    @@all.select {|song| self == Song}
+    @@all.select {|song| self == Song.all}
   end
 
   def genres #iterates over that artist's songs and collects the genre of each song
