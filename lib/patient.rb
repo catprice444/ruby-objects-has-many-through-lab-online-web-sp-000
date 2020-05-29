@@ -27,5 +27,4 @@ class Patient
     appointments.collect {|appointment| appointment.doctor}
   end
 
-  binding.pry
 end
