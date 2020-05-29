@@ -22,7 +22,7 @@ class Patient
   end
 
   def doctors #iterates over that patient's Appointments and collects the doctor that belongs to each Appointment
-    appointments.collect {|appointment| appointment.doctor}
+    self.appointments.collect {|appointment| appointment.doctor}
   end
 
 end
